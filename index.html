@@ -2,9 +2,19 @@
 <head>
     <title>我的网页</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_600401_ljrl1sigllv50zfr.js"></script>
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
 </head>
 <body>
-    <div class="topNavBar clearfix">
+    <div class="topNavBar ">
+        <div class="topNavBar-inner clearfix">
         <a class="logo" href="#" alt="logo" style="float:left;">
             <span class="rs">RS</span><span class="card">card</span>
         </a>
@@ -20,41 +30,63 @@
             <li><a href="#">OTHER</a></li>
         </ul>
         </nav>
+        </div>
     </div>
-    <div class="banner" style="background-image: url(#)"></div>
+    <div class="banner" >
+        <div class="mask">
+            
+        </div>
+    </div>
     <main>
-         <div class="card">  
-            <div class="pirture">
-                <img src="" alt="头像">
-            </div>
-            <div class="text">
-                <div class="profile">              
-                    <span class="welcome">Hello</span>
+        <div class="UserCard">
+          <div class="PictureAadText clearfix">
+             <div class="pirture">
+                <img src="./img/avatar.jpg" width=299 height=347 alt="头像">
+             </div>
+            <div class="text">                           
+                 <span class="welcome">Hello
+                      <span class="triangle"></span>
+                 </span>
                     <h1>韦虎</h1>
                     <p>前端开发工程师</p>
                     <hr>
-                    description list
                     <dl>
                         <dt>年龄</dt>
                         <dd>24</dd>
                         <dt>所在城市</dt>
                         <dd>武汉</dd>
+                        <dt>邮箱</dt>
+                        <dd>1183969348@qq.com</dd>
                         <dt>手机</dt>
                         <dd>xxxxxxxxxx</dd>
-                    </dl>
-                </div>
-                <footer class="media">
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                    <a href="#"><img src="#" alt="..."></a>
-                </footer>
+                    </dl>               
             </div>
-        </div> 
-
+          </div> 
+          
+                <footer class="media">
+                    <a href="#"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-github"></use>
+                        </svg>
+                    </a>
+                    <a href="#"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-CN_jianshu"></use>
+                        </svg>
+                    </a>
+                    <a href="#"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-weibo"></use>
+                        </svg>
+                    </a>
+                    <a href="#"><svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-zhihu"></use>
+                        </svg>
+                    </a>
+                   
+                </footer> 
+            </div>   
         <a href="button" href="#">下载 PDF 简历</a>
 
         <p>
