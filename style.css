@@ -29,6 +29,21 @@ h1,h2,h3,h4,h5,h6{
 [date-x].active{
     outline: 1px solid red;
 }
+[date-x].offset{
+        transform: translateY(300px);
+    }
+[date-x]{
+        transform: translateY(0);
+        transition: all 0.5s;
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
 .topNavBar{
     padding: 20px 0;
     position: fixed;
@@ -71,7 +86,8 @@ h1,h2,h3,h4,h5,h6{
     display: block;
     position: relative;
 }
-.topNavBar nav> ul > li.active > a::after{
+.topNavBar nav> ul > li.active > a::after,
+.topNavBar nav> ul > li.highlight > a::after{
     content: '';
     display: block;
     position: absolute;
@@ -289,6 +305,7 @@ section.skils .progressBar >.progress{
     height: 100%;
     background: #e6686a;
     width: 70%;
+    border-radius: 2px;
 }
 section.portfolio {
     text-align: center;
